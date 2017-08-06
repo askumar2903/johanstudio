@@ -1,0 +1,79 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Alegreya+SC:700|Cutive+Mono);
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+	/*body {
+	    font-family: 'Lato', Calibri, Arial, sans-serif;
+	    background: #810606;
+	    font-weight: 400;
+	    font-size: 15px;
+	    color: #333;
+	    overflow: hidden;
+	    height: 100%;
+	}
+*/
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.con {
+	width: 100%;
+	height: 100%;
+}
+
+.con > h1 {
+	z-index: 9999;
+	font-weight: 400;
+	padding: 50px 20px;
+}
+
+.js .con > h1 {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	bottom: 0;
+	left: 0;
+	color: #f0f0f0;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.con > h1 a {
+	font-size: 12px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.con > h1 a:hover,
+.con > h1 a.demo-current {
+	color: #222;
+}
